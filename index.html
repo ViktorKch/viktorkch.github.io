@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Color scheme viewer</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <style>
+    body {
+      background-color: #212529;
+    }
+
+    .uniqtiles {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .uniqtile {
+      margin: 20px;
+      height: 100px;
+      width: 100px;
+      border: 2px black solid;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <input class="form-control" type="search" placeholder="Начните вводить цвет или свойство дом эллемента"
+      aria-label="Цвет или Свойство">
+  </nav>
+  <container>
+    <div id="result"></div>
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Поисковая строка</th>
+          <th scope="col">Результат</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </container>
+  <container class="uniqtiles">
+
+  </container>
+</body>
+
+</html>
